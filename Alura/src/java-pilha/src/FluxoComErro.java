@@ -1,5 +1,5 @@
 
-public class Fluxo {
+public class FluxoComErro {
 
 	public static void main(String[] args) {
 	    System.out.println("Ini do main");
@@ -9,7 +9,7 @@ public class Fluxo {
 //	    	vamos utilizar o bloco try e catch:
 	    	
 	    	metodo1();
-	    } catch(Exception ex) { // ( Sig.: | OU ) esse erro imprimi a msg
+	    } catch(ArithmeticException | NullPointerException ex) { // ( Sig.: | OU ) esse erro imprimi a msg
 	        String msg = ex.getMessage();//fazer um referncia para chamar um metodo, no caso ex.getMess..
 	        //System.out.println("Exception " + msg);
 	        //ex.printStackTrace();//imprima o seu rastro...
@@ -26,15 +26,11 @@ public class Fluxo {
         System.out.println("Fim do metodo1");
     }
 
-    private static void metodo2()throws MinhaExcecao {
+    private static void metodo2() { //ficara chamando o METODO2  e apilha cresce e nunca chega no fim
         System.out.println("Ini do metodo2");
-        throw new MinhaExcecao("deu muito errado");
-//        for(int i = 1; i <= 5; i++) { //retornar uma ArithmeticException!
-//            System.out.println(i);
-            //int a = i / 0;
-            //Conta c = null;
-            //c.deposita();
+        metodo2(); //Repare que método2() chama a si mesmo. Isso também é chamado de recursão.
+            
         
-        //System.out.println("Fim do metodo2");
+        System.out.println("Fim do metodo2");
     }
 }

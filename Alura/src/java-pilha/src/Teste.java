@@ -17,7 +17,7 @@ public class Teste {
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
             try {
-                int a = i / 0;
+                //int a = i / 0;
                 
 //  precisamos avisar para a máquina virtual qual exceção pode acontecer. Para isso,
 //  utilizaremos um novo bloco de código, por meio de catch, sinalizando que queremos
@@ -26,5 +26,6 @@ public class Teste {
             } catch (ArithmeticException ex) {
 
             }    
+        }
     }
 }
