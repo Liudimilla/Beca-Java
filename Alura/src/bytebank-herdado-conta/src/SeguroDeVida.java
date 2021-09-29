@@ -1,3 +1,4 @@
+package br.com.bytebank.banco.base;
 public class SeguroDeVida implements Tributavel {
 
         @Override

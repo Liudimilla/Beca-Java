@@ -1,3 +1,10 @@
+package br.com.bytebank.banco.teste;
+
+import br.com.bytebank.banco.contas.ContaCorrente;
+import br.com.bytebank.banco.contas.ContaInvestimento;
+import br.com.bytebank.banco.contas.ContaPoupanca;
+import br.com.bytebank.banco.contas.ContaVirtual;
+
 public class TesteContas2 {
 
         public static void main(String[] args) {
@@ -14,8 +21,8 @@ public class TesteContas2 {
             ContaInvestimento ci = new ContaInvestimento(444, 44, 4);
             ci.deposita(10000.00);
             
-            cc.transfere(10.0, cp); //cp e a CONTA destino.:
-            ci.transfere(800.00, cv);
+            //cc.transfere(10.0, cp); //cp e a CONTA destino.:
+            //ci.transfere(800.00, cv);
            
             
             System.out.println("CC: " + cc.getSaldo());

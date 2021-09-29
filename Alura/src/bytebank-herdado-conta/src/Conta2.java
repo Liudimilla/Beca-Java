@@ -1,10 +1,16 @@
+package br.com.bytebank.banco.contas;
+
+
+
+import br.com.bytebank.banco.base.Cliente;
+
 public abstract class Conta2 {
 
     protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
-    private static int total = 0;
+    static int total = 0;
     
     public Conta2() {
 
