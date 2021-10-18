@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.digitalinnovationone.springboot.SpringbootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.535 s <<< FAILURE! - in com.digitalinnovationone.springboot.SpringbootApplicationTests
+contextLoads  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: 
+Configuration problem: @Bean method 'productionDatabaseConnection' must not be private or final; change the method's modifiers to continue
+Offending resource: class path resource [com/digitalinnovationone/springboot/config/DBConfiguration.class]
+
